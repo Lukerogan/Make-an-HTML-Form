@@ -3,15 +3,7 @@
 
 <head>
     <title>Sign Up</title>
-    <style>
-        form,
-        h3,
-        h1 {
-            text-align: center;
-        }
-
-        
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -20,22 +12,23 @@
     <form>
         <label for="name">YOUR NAME:</label>
         <br>
-        <input type="text" name="name" id="name" required>
+        <input type="text" name="name" id="name" class="nameinput" required>
         <br><br>
         <label for="email">EMAIL:</label>
         <br>
-        <input type="email" name="email" id="email" required>
+        <input type="email" name="email" id="email" class="emailinput" required>
         <br><br>
-        <div>
-            <label for="pass" id="password">PASSWORD:</label>
-            <input type="password" name="pass" id="pass" required>
-        </div><br><div>
-        <label for="passconfirm">CONFIRM PASSWORD:</label>
-        <input type="password" name="passconfirm" id="passconfirm" required>
+        <div class="pass">
+            <label for="passinput" id="passlabel" class="passlabel">PASSWORD:</label>
+            <input type="password" name="passinput" id="passinput" class="passinput" required>
+        </div>
+        <div class="passconfirm">
+            <label for="confirminput" class="passconflabel">CONFIRM PASSWORD:</label>
+            <input type="password" name="confirminput" id="confirminput" class="confirminput" required>
         </div><br><br>
         <label for="country">COUNTRY:</label>
         <br>
-        <select name="country" id="country">
+        <select name="country" id="country" class="countryselect">
             <option value="select">select</option>
             <option value="Afghanistan">Afghanistan</option>
             <option value="Albania">Albania</option>
